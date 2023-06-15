@@ -209,6 +209,7 @@ def insert_to_notion(bookName, bookId, cover, sort, author,isbn,rating):
         "Author": {"rich_text": [{"type": "text", "text": {"content": author}}]},
         "Sort": {"number": sort},
         "Rating": {"number": rating},
+        "信息处理统计": {"relation": [{"id": "0bc1af24b02b4775bb53cfa522251afa"}]},
         "Cover": {"files": [{"type": "external", "name": "Cover", "external": {"url": cover}}]},
     }
     read_info = get_read_info(bookId=bookId)
