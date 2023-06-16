@@ -208,7 +208,7 @@ def insert_to_notion(bookName, bookId, cover, sort, author, isbn, rating, relati
         "URL": {"url": f"https://weread.qq.com/web/reader/{calculate_book_str_id(bookId)}"},
         "Author": {"rich_text": [{"type": "text", "text": {"content": author}}]},
         "Sort": {"number": sort},
-        "relationtosum": {"relation": [{"id": "0bc1af24b02b4775bb53cfa522251afa"}]}
+        "relationtosum": {"relation": [{"id": "0bc1af24b02b4775bb53cfa522251afa"}]},
         "Rating": {"number": rating},
         "Cover": {"files": [{"type": "external", "name": "Cover", "external": {"url": cover}}]},
     }
